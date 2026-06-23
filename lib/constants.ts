@@ -1,16 +1,16 @@
 export const SITE_CONFIG = {
-  name: "Gokul Dairy",
-  nameMarathi: "गोकुळ डेअरी",
+  name: "Nandadeep Milk Dairy",
+  nameMarathi: "नंददीप दूध डेअरी",
   tagline: "Farm Fresh Dairy Goodness, Delivered Daily",
   taglineMarathi: "शेतातून ताजे दुग्ध उत्पादने, दररोज डिलिव्हरी",
   description:
     "From our farm to your family — experience the richness of pure milk, fresh curd, creamy paneer, and traditional dairy products.",
   descriptionMarathi:
     "आमच्या शेतातून तुमच्या कुटुंबापर्यंत — शुद्ध दूध, ताजे दही, मलईदार पनीर आणि पारंपरिक दुग्ध उत्पादनांचा अनुभव घ्या.",
-  email: "gokuldairy@gmail.com",
+  email: "nandadeepmilkdairy@gmail.com",
   phone: "+91 9657782463",
-  address: "Gokul Dairy Farm, Kharadi, Pune - 411014",
-  addressMarathi: "गोकुळ डेअरी फार्म, खराडी, पुणे - ४११०१४",
+  address: "Nandadeep Milk Dairy Farm, Kharadi, Pune - 411014",
+  addressMarathi: "नंददीप दूध डेअरी फार्म, खराडी, पुणे - ४११०१४",
 } as const;
 
 export const NAV_LINKS = [
@@ -184,9 +184,9 @@ export const STATS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "We have been getting milk from Gokul Dairy for 5 years now. The quality and freshness is unmatched. Our children love it!",
+      "We have been getting milk from Nandadeep Milk Dairy for 5 years now. The quality and freshness is unmatched. Our children love it!",
     quoteMr:
-      "आम्ही गेल्या ५ वर्षांपासून गोकुळ डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे. आमच्या मुलांना ते आवडते!",
+      "आम्ही गेल्या ५ वर्षांपासून नंददीप दूध डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे. आमच्या मुलांना ते आवडते!",
     author: "Sunita Patil",
     authorMr: "सुनिता पाटील",
     role: "Homemaker, Kharadi",
