@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://abhijitchavan408.github.io/nanda-milk-dairy/",
+  siteUrl: "https://nandadeep.co.in",
   generateRobotsTxt: true,
 };
