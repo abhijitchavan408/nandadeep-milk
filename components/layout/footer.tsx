@@ -1,38 +1,45 @@
+"use client";
+
 import Link from "next/link";
-import { Code2, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { SITE_CONFIG, NAV_LINKS } from "@/lib/constants";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 const SOCIAL_LINKS = [
-  { label: "Twitter", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "GitHub", href: "#" },
+  { label: "Instagram", href: "#" },
+  { label: "Facebook", href: "#" },
+  { label: "YouTube", href: "#" },
 ];
 
 export function Footer() {
+  const { language, t } = useLanguage();
+  const f = translations.footer;
+
   return (
-    <footer className="border-t bg-card text-card-foreground">
+    <footer className="border-t bg-gradient-to-b from-green-50/50 to-background">
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8 lg:py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="flex flex-col gap-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <Code2 className="h-5 w-5 text-primary-foreground" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-green-600 to-green-500">
+                <span className="text-lg">🥛</span>
               </div>
               <span className="font-heading text-lg font-bold text-foreground">
-                {SITE_CONFIG.name}
+                {language === "en" ? SITE_CONFIG.name : SITE_CONFIG.nameMarathi}
               </span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-              {SITE_CONFIG.description}
+              {language === "en" ? SITE_CONFIG.description : SITE_CONFIG.descriptionMarathi}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="flex flex-col gap-3">
             <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-foreground">
-              Quick Links
+              {t(f.quickLinks.en, f.quickLinks.mr)}
             </h3>
             <nav className="flex flex-col gap-2">
               {NAV_LINKS.map((link) => (
@@ -41,7 +48,7 @@ export function Footer() {
                   href={link.href}
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  {link.label}
+                  {language === "en" ? link.label : link.labelMr}
                 </Link>
               ))}
             </nav>
@@ -50,7 +57,7 @@ export function Footer() {
           {/* Contact Info */}
           <div className="flex flex-col gap-3">
             <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-foreground">
-              Contact
+              {t(f.contact.en, f.contact.mr)}
             </h3>
             <div className="flex flex-col gap-3">
               <a
@@ -69,7 +76,7 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                {SITE_CONFIG.address}
+                {language === "en" ? SITE_CONFIG.address : SITE_CONFIG.addressMarathi}
               </div>
             </div>
           </div>
@@ -77,7 +84,7 @@ export function Footer() {
           {/* Social */}
           <div className="flex flex-col gap-3">
             <h3 className="font-heading text-sm font-semibold uppercase tracking-wider text-foreground">
-              Follow Us
+              {t(f.followUs.en, f.followUs.mr)}
             </h3>
             <div className="flex flex-col gap-2">
               {SOCIAL_LINKS.map((link) => (
@@ -99,20 +106,20 @@ export function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            {`\u00A9 ${new Date().getFullYear()} ${SITE_CONFIG.name}. All rights reserved.`}
+            {`\u00A9 ${new Date().getFullYear()} ${language === "en" ? SITE_CONFIG.name : SITE_CONFIG.nameMarathi}. ${t(f.rights.en, f.rights.mr)}`}
           </p>
           <div className="flex gap-6">
             <Link
               href="#"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              Privacy Policy
+              {t(f.privacy.en, f.privacy.mr)}
             </Link>
             <Link
               href="#"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              Terms of Service
+              {t(f.terms.en, f.terms.mr)}
             </Link>
           </div>
         </div>

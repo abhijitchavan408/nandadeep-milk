@@ -1,4 +1,7 @@
-import { CheckCircle2, Globe, Smartphone, Palette, Code } from "lucide-react";
+"use client";
+
+import Image from "next/image";
+import { CheckCircle2 } from "lucide-react";
 import {
   Card,
   CardHeader,
@@ -6,62 +9,72 @@ import {
   CardDescription,
   CardContent,
 } from "@/components/ui/card";
-
-const ICON_MAP: Record<string, React.ReactNode> = {
-  Globe: <Globe className="h-7 w-7" />,
-  Smartphone: <Smartphone className="h-7 w-7" />,
-  Palette: <Palette className="h-7 w-7" />,
-  Code: <Code className="h-7 w-7" />,
-};
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 interface ServiceDetailCardProps {
   id: string;
   title: string;
+  titleMr: string;
   fullDescription: string;
+  fullDescriptionMr: string;
   features: readonly string[];
+  featuresMr: readonly string[];
   icon: string;
+  image: string;
   index: number;
 }
 
 export function ServiceDetailCard({
   id,
   title,
+  titleMr,
   fullDescription,
+  fullDescriptionMr,
   features,
-  icon,
+  featuresMr,
+  image,
   index,
 }: ServiceDetailCardProps) {
+  const { language, t } = useLanguage();
   const isEven = index % 2 === 0;
+  const s = translations.services;
 
   return (
     <Card id={id} className="overflow-hidden scroll-mt-24">
       <div className={`flex flex-col ${isEven ? "lg:flex-row" : "lg:flex-row-reverse"}`}>
-        {/* Icon Side */}
-        <div className="flex items-center justify-center bg-primary/5 p-8 lg:w-2/5 lg:p-12">
-          <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-            {ICON_MAP[icon]}
-          </div>
+        {/* Image Side */}
+        <div className="relative h-64 w-full lg:h-auto lg:w-2/5">
+          <Image
+            src={image}
+            alt={language === "en" ? title : titleMr}
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 40vw"
+          />
         </div>
 
         {/* Content Side */}
         <div className="flex flex-col p-6 lg:w-3/5 lg:p-8">
           <CardHeader className="p-0 pb-4">
-            <CardTitle className="font-heading text-2xl">{title}</CardTitle>
+            <CardTitle className="font-heading text-2xl">
+              {language === "en" ? title : titleMr}
+            </CardTitle>
             <CardDescription className="text-base leading-relaxed">
-              {fullDescription}
+              {language === "en" ? fullDescription : fullDescriptionMr}
             </CardDescription>
           </CardHeader>
           <CardContent className="p-0">
             <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-foreground">
-              What We Deliver
+              {t(s.whatWeOffer.en, s.whatWeOffer.mr)}
             </h4>
             <ul className="grid gap-2 sm:grid-cols-2">
-              {features.map((feature) => (
+              {(language === "en" ? features : featuresMr).map((feature) => (
                 <li
                   key={feature}
                   className="flex items-start gap-2 text-sm text-muted-foreground"
                 >
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-green-500" />
                   {feature}
                 </li>
               ))}

@@ -1,23 +1,23 @@
-import type { Metadata } from "next";
+"use client";
+
 import { PageHeader } from "@/components/shared/page-header";
 import { SectionWrapper } from "@/components/shared/section-wrapper";
 import { ServiceDetailCard } from "@/components/services/service-detail-card";
 import { CTASection } from "@/components/home/cta-section";
 import { SERVICES } from "@/lib/constants";
-
-export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "Explore our comprehensive IT services including website development, mobile app development, UI/UX design, and custom software solutions.",
-};
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 export default function ServicesPage() {
+  const { t } = useLanguage();
+  const s = translations.services;
+
   return (
     <>
       <PageHeader
-        badge="Our Services"
-        title="Comprehensive IT Solutions"
-        description="We provide end-to-end digital services designed to help businesses innovate, grow, and compete in the modern marketplace."
+        badge={t(s.badge.en, s.badge.mr)}
+        title={t(s.pageTitle.en, s.pageTitle.mr)}
+        description={t(s.pageDescription.en, s.pageDescription.mr)}
       />
 
       <SectionWrapper>
@@ -27,9 +27,13 @@ export default function ServicesPage() {
               key={service.id}
               id={service.id}
               title={service.title}
+              titleMr={service.titleMr}
               fullDescription={service.fullDescription}
+              fullDescriptionMr={service.fullDescriptionMr}
               features={service.features}
+              featuresMr={service.featuresMr}
               icon={service.icon}
+              image={service.image}
               index={index}
             />
           ))}

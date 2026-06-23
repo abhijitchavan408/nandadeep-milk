@@ -1,192 +1,231 @@
 export const SITE_CONFIG = {
-  name: "AN Solutions",
-  tagline: "Building Digital Solutions That Drive Growth",
+  name: "Gokul Dairy",
+  nameMarathi: "गोकुळ डेअरी",
+  tagline: "Farm Fresh Dairy Goodness, Delivered Daily",
+  taglineMarathi: "शेतातून ताजे दुग्ध उत्पादने, दररोज डिलिव्हरी",
   description:
-    "We deliver cutting-edge website development, mobile app development, UI/UX design, and custom software solutions for modern businesses.",
-  email: "ansolutions.dev@gmail.com",
+    "From our farm to your family — experience the richness of pure milk, fresh curd, creamy paneer, and traditional dairy products.",
+  descriptionMarathi:
+    "आमच्या शेतातून तुमच्या कुटुंबापर्यंत — शुद्ध दूध, ताजे दही, मलईदार पनीर आणि पारंपरिक दुग्ध उत्पादनांचा अनुभव घ्या.",
+  email: "gokuldairy@gmail.com",
   phone: "+91 9657782463",
-  address: "Bock-3 International Tech Park Kharadi,Pune. 411014",
+  address: "Gokul Dairy Farm, Kharadi, Pune - 411014",
+  addressMarathi: "गोकुळ डेअरी फार्म, खराडी, पुणे - ४११०१४",
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-  { label: "Appointment", href: "/appointment" },
-  { label: "Dashboard", href: "/dashboard" },
+  { label: "Home", labelMr: "मुख्यपृष्ठ", href: "/" },
+  { label: "Products", labelMr: "उत्पादने", href: "/services" },
+  { label: "About", labelMr: "आमच्याबद्दल", href: "/about" },
+  { label: "Contact", labelMr: "संपर्क", href: "/contact" },
 ] as const;
 
 export const SERVICES = [
   {
-    id: "web-development",
-    title: "Website Development",
+    id: "fresh-milk",
+    title: "Fresh Milk",
+    titleMr: "ताजे दूध",
     shortDescription:
-      "Responsive, high-performance websites built with modern frameworks and best practices.",
+      "Pure, farm-fresh cow and buffalo milk delivered to your doorstep every morning.",
+    shortDescriptionMr:
+      "दररोज सकाळी शुद्ध, शेतातून ताजे गाय आणि म्हशीचे दूध तुमच्या दारापर्यंत.",
     fullDescription:
-      "From corporate websites to complex web applications, we build responsive, high-performance digital experiences using React, Next.js, and modern web technologies. Our websites are optimized for speed, SEO, and conversion.",
+      "Our farm-fresh milk comes directly from our healthy, grass-fed cows and buffaloes. We ensure the highest quality through rigorous hygiene standards and cold chain delivery so you get the purest milk every single morning.",
+    fullDescriptionMr:
+      "आमचे शेतातून ताजे दूध आमच्या निरोगी, गवत खाणाऱ्या गायी आणि म्हशींकडून थेट येते. कडक स्वच्छता मानके आणि कोल्ड चेन डिलिव्हरीद्वारे आम्ही सर्वोच्च गुणवत्ता सुनिश्चित करतो.",
     features: [
-      "Custom website design and development",
-      "E-commerce solutions",
-      "Progressive Web Apps (PWA)",
-      "CMS integration",
-      "Performance optimization",
-      "SEO-friendly architecture",
+      "Farm-fresh cow milk",
+      "Rich buffalo milk",
+      "A2 milk available",
+      "Morning home delivery",
+      "No preservatives added",
+      "Hygienic cold chain",
     ],
-    icon: "Globe",
+    featuresMr: [
+      "शेतातून ताजे गाईचे दूध",
+      "समृद्ध म्हशीचे दूध",
+      "A2 दूध उपलब्ध",
+      "सकाळी होम डिलिव्हरी",
+      "कोणतेही प्रिझर्व्हेटिव्ह नाही",
+      "स्वच्छ कोल्ड चेन",
+    ],
+    icon: "Milk",
+    image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&q=80",
   },
   {
-    id: "mobile-development",
-    title: "Mobile App Development",
+    id: "fresh-curd",
+    title: "Fresh Curd & Buttermilk",
+    titleMr: "ताजे दही आणि ताक",
     shortDescription:
-      "Native and cross-platform mobile applications for iOS and Android.",
+      "Thick, creamy curd and refreshing buttermilk made from pure whole milk.",
+    shortDescriptionMr:
+      "शुद्ध दुधापासून बनवलेले दाट, मलईदार दही आणि ताजेतवाने ताक.",
     fullDescription:
-      "We create native and cross-platform mobile applications that deliver seamless experiences across iOS and Android. Using React Native and Flutter, we build apps that are fast, reliable, and engaging.",
+      "Our curd is set using traditional cultures and pure whole milk, giving it a thick, creamy texture and natural tangy flavor. Our buttermilk is freshly churned and seasoned — perfect for hot summer days.",
+    fullDescriptionMr:
+      "आमचे दही पारंपरिक संस्कृती आणि शुद्ध दुधाचा वापर करून तयार केले जाते, ज्यामुळे त्याला दाट, मलईदार पोत आणि नैसर्गिक चव मिळते. आमचे ताक ताजे लोण्यापासून काढलेले आणि मसालेदार आहे.",
     features: [
-      "iOS and Android development",
-      "Cross-platform solutions",
-      "UI/UX mobile design",
-      "App Store optimization",
-      "Push notifications and analytics",
-      "Maintenance and support",
+      "Thick set curd",
+      "Fresh churned buttermilk",
+      "Natural probiotics",
+      "No artificial thickeners",
+      "Multiple pack sizes",
+      "Daily fresh preparation",
     ],
-    icon: "Smartphone",
+    featuresMr: [
+      "दाट दही",
+      "ताजे ताक",
+      "नैसर्गिक प्रोबायोटिक्स",
+      "कृत्रिम थिकनर नाही",
+      "विविध पॅक आकार",
+      "दररोज ताजे तयार",
+    ],
+    icon: "CupSoda",
+    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
   },
   {
-    id: "uiux-design",
-    title: "UI/UX Design",
+    id: "paneer-cheese",
+    title: "Paneer & Cheese",
+    titleMr: "पनीर आणि चीज",
     shortDescription:
-      "User-centered design that creates intuitive, beautiful digital experiences.",
+      "Soft, fresh paneer and artisan cheese made from the richest whole milk.",
+    shortDescriptionMr:
+      "सर्वात समृद्ध दुधापासून बनवलेले मऊ, ताजे पनीर आणि चीज.",
     fullDescription:
-      "Our design team crafts user-centered interfaces that are both beautiful and functional. We follow a research-driven approach to create intuitive experiences that delight users and drive engagement.",
+      "Our paneer is handmade daily from pure, full-cream milk — soft, fresh, and perfect for any dish. We also offer a range of artisanal cheese varieties crafted with traditional methods for authentic taste.",
+    fullDescriptionMr:
+      "आमचे पनीर शुद्ध, फुल-क्रीम दुधापासून दररोज हाताने बनवले जाते — मऊ, ताजे आणि कोणत्याही पदार्थासाठी योग्य. आम्ही पारंपरिक पद्धतींनी तयार केलेल्या विविध चीज देखील देतो.",
     features: [
-      "User research and personas",
-      "Wireframing and prototyping",
-      "Visual design systems",
-      "Usability testing",
-      "Interaction design",
-      "Design system creation",
+      "Fresh handmade paneer",
+      "Soft & malai paneer",
+      "Artisan cheese varieties",
+      "No preservatives",
+      "Made from full-cream milk",
+      "Available in bulk orders",
     ],
-    icon: "Palette",
+    featuresMr: [
+      "ताजे हाताने बनवलेले पनीर",
+      "सॉफ्ट आणि मलई पनीर",
+      "विविध चीज",
+      "कोणतेही प्रिझर्व्हेटिव्ह नाही",
+      "फुल-क्रीम दुधापासून बनवलेले",
+      "मोठ्या ऑर्डरमध्ये उपलब्ध",
+    ],
+    icon: "Beef",
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=800&q=80",
   },
   {
-    id: "custom-software",
-    title: "Custom Software Development",
+    id: "ghee-butter",
+    title: "Ghee & Butter",
+    titleMr: "तूप आणि लोणी",
     shortDescription:
-      "Tailored software solutions designed to solve your unique business challenges.",
+      "Pure desi ghee and fresh butter made the traditional way for authentic flavor.",
+    shortDescriptionMr:
+      "पारंपरिक पद्धतीने बनवलेले शुद्ध देसी तूप आणि ताजे लोणी.",
     fullDescription:
-      "We build tailored software solutions that automate workflows, integrate systems, and scale with your business. From enterprise applications to SaaS platforms, our custom solutions are built for reliability and growth.",
+      "Our desi ghee is slow-cooked from fresh cream using the traditional bilona method, giving it a rich golden color and aromatic flavor. Our butter is hand-churned from fresh cream — pure, creamy, and utterly delicious.",
+    fullDescriptionMr:
+      "आमचे देसी तूप पारंपरिक बिलोना पद्धतीने ताज्या मलईपासून हळूहळू शिजवले जाते, ज्यामुळे त्याला समृद्ध सोनेरी रंग आणि सुगंधी चव मिळते. आमचे लोणी ताज्या मलईपासून हाताने घुसळलेले आहे.",
     features: [
-      "Enterprise application development",
-      "SaaS platform development",
-      "API design and integration",
-      "Cloud infrastructure setup",
-      "Database architecture",
-      "DevOps and CI/CD pipelines",
+      "Traditional bilona ghee",
+      "Hand-churned butter",
+      "A2 cow ghee",
+      "Rich golden color & aroma",
+      "No artificial additives",
+      "Glass jar packaging",
     ],
-    icon: "Code",
-  },
-] as const;
-
-export const PORTFOLIO_PROJECTS = [
-  {
-    id: "finpay-dashboard",
-    title: "FinPay Dashboard",
-    description:
-      "A comprehensive financial analytics dashboard with real-time data visualization, transaction tracking, and AI-powered insights for fintech startup FinPay.",
-    category: "Web Application",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Chart.js"],
-    image: "/images/portfolio/finpay.jpg",
-  },
-  {
-    id: "healthtrack-app",
-    title: "HealthTrack Mobile",
-    description:
-      "Cross-platform health and wellness tracking application with wearable device integration, personalized recommendations, and social fitness features.",
-    category: "Mobile App",
-    techStack: ["React Native", "Node.js", "MongoDB", "Firebase", "HealthKit"],
-    image: "/images/portfolio/healthtrack.jpg",
-  },
-  {
-    id: "shopverse-ecommerce",
-    title: "ShopVerse E-Commerce",
-    description:
-      "A high-performance e-commerce platform featuring AI-powered product recommendations, real-time inventory management, and seamless checkout experiences.",
-    category: "E-Commerce",
-    techStack: ["Next.js", "Stripe", "Prisma", "Redis", "AWS"],
-    image: "/images/portfolio/shopverse.jpg",
-  },
-  {
-    id: "edulearn-platform",
-    title: "EduLearn Platform",
-    description:
-      "An interactive online learning platform with video streaming, live classes, progress tracking, and collaborative tools for educators and students.",
-    category: "SaaS Platform",
-    techStack: ["React", "Python", "Django", "WebRTC", "AWS S3"],
-    image: "/images/portfolio/edulearn.jpg",
-  },
-  {
-    id: "logismart-system",
-    title: "LogiSmart System",
-    description:
-      "Enterprise logistics management system with route optimization, real-time fleet tracking, and predictive analytics for supply chain operations.",
-    category: "Enterprise Software",
-    techStack: ["TypeScript", "Node.js", "PostgreSQL", "Docker", "Kubernetes"],
-    image: "/images/portfolio/logismart.jpg",
-  },
-  {
-    id: "artisan-portfolio",
-    title: "Artisan Creative Portfolio",
-    description:
-      "A stunning portfolio website for a creative agency featuring immersive animations, interactive galleries, and a custom CMS for content management.",
-    category: "Website",
-    techStack: ["Next.js", "Framer Motion", "Sanity CMS", "Tailwind CSS"],
-    image: "/images/portfolio/artisan.jpg",
+    featuresMr: [
+      "पारंपरिक बिलोना तूप",
+      "हाताने घुसळलेले लोणी",
+      "A2 गाईचे तूप",
+      "समृद्ध सोनेरी रंग आणि सुगंध",
+      "कृत्रिम पदार्थ नाहीत",
+      "काचेच्या भांड्यात पॅकेजिंग",
+    ],
+    icon: "Flame",
+    image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=800&q=80",
   },
 ] as const;
 
 export const TEAM_MEMBERS = [
   {
-    name: "Abhijit Chavan",
-    role: "CEO & Co-Founder",
-    bio: "10+ years in tech leadership",
+    name: "Baburao Gome",
+    nameMr: "बाबुराव गोमे",
+    role: "Founder & Owner",
+    roleMr: "संस्थापक आणि मालक",
+    bio: "15+ years of dairy farming expertise",
+    bioMr: "१५+ वर्षांचा दुग्ध व्यवसाय अनुभव",
   },
   {
-    name: "Neha Chavan",
-    role: "Head of Design",
-    bio: "Full-stack architect with expertise in cloud infrastructure and distributed systems.",
+    name: "Nanda Gome",
+    nameMr: "नंदा गोमे",
+    role: "Quality Manager",
+    roleMr: "गुणवत्ता व्यवस्थापक",
+    bio: "Ensures the highest quality standards for all our products.",
+    bioMr: "आमच्या सर्व उत्पादनांसाठी सर्वोच्च गुणवत्ता मानके सुनिश्चित करतात.",
   },
   {
-    name: "Prasad Kakade",
-    role: "Lead Developer",
-    bio: "Award-winning designer specializing in user experience for enterprise and consumer products.",
-  }
+    name: "Ranjit Chavan",
+    nameMr: "रणजित चव्हाण",
+    role: "Farm Operations Head",
+    roleMr: "फार्म ऑपरेशन्स प्रमुख",
+    bio: "Manages daily operations and cattle welfare at the farm.",
+    bioMr: "शेतातील दैनंदिन कार्ये आणि गुरांची काळजी यांचे व्यवस्थापन.",
+  },
 ] as const;
 
 export const STATS = [
-  { value: "70+", label: "Projects Delivered" },
-  { value: "50+", label: "Happy Clients" },
-  { value: "10+", label: "Team Members" },
-  { value: "2+", label: "Years Experience" },
+  { value: "500+", labelEn: "Happy Families", labelMr: "आनंदी कुटुंबे" },
+  { value: "2000+", labelEn: "Liters Daily", labelMr: "लिटर दररोज" },
+  { value: "15+", labelEn: "Years of Trust", labelMr: "विश्वासाची वर्षे" },
+  { value: "20+", labelEn: "Dairy Products", labelMr: "दुग्ध उत्पादने" },
 ] as const;
 
 export const TESTIMONIALS = [
   {
     quote:
-      "AN Solutions transformed our outdated systems into a modern, scalable platform. Their team's expertise and professionalism exceeded our expectations.",
-    author: "Rajesh Mehta",
-    role: "Tech Lead, Novaloop Systems",
+      "We have been getting milk from Gokul Dairy for 5 years now. The quality and freshness is unmatched. Our children love it!",
+    quoteMr:
+      "आम्ही गेल्या ५ वर्षांपासून गोकुळ डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे. आमच्या मुलांना ते आवडते!",
+    author: "Sunita Patil",
+    authorMr: "सुनिता पाटील",
+    role: "Homemaker, Kharadi",
+    roleMr: "गृहिणी, खराडी",
   },
   {
     quote:
-      "The mobile app they built for us has been a game-changer. User engagement increased by 300% within the first quarter of launch.",
-    author: "Priya Nair",
-    role: "Product Director, HealthTrack",
+      "The paneer is incredibly fresh and soft. I use it in all my cooking. The desi ghee also has an amazing aroma — just like the old days!",
+    quoteMr:
+      "पनीर अविश्वसनीयपणे ताजे आणि मऊ आहे. मी ते माझ्या सर्व स्वयंपाकात वापरते. देसी तूपाचा सुगंधही अप्रतिम आहे — जुन्या दिवसांसारखा!",
+    author: "Rajesh Deshmukh",
+    authorMr: "राजेश देशमुख",
+    role: "Restaurant Owner, Pune",
+    roleMr: "रेस्टॉरंट मालक, पुणे",
   },
   {
     quote:
-      "Working with AN Solutions felt like having an extension of our own team. They truly understood our vision and delivered beyond what we imagined.",
-    author: "Arjun Kapoor",
-    role: "Founder, ShopVerse",
+      "Best dairy products in Pune! The morning delivery is always on time and the milk tastes absolutely pure. Highly recommended!",
+    quoteMr:
+      "पुण्यातील सर्वोत्तम दुग्ध उत्पादने! सकाळची डिलिव्हरी नेहमी वेळेवर असते आणि दुधाची चव अगदी शुद्ध असते. अत्यंत शिफारस!",
+    author: "Meera Joshi",
+    authorMr: "मीरा जोशी",
+    role: "Health Coach, Viman Nagar",
+    roleMr: "हेल्थ कोच, विमान नगर",
   },
 ] as const;
+
+// Dairy images from Unsplash (free to use)
+export const DAIRY_IMAGES = {
+  hero: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=1200&q=80",
+  heroMobile: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&q=80",
+  milk: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&q=80",
+  cow: "https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=800&q=80",
+  farm: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80",
+  curd: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
+  paneer: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=800&q=80",
+  ghee: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=800&q=80",
+  butter: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=800&q=80",
+  cheese: "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&q=80",
+  delivery: "https://images.unsplash.com/photo-1544085311-11a028465b03?w=800&q=80",
+  bottles: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=800&q=80",
+} as const;

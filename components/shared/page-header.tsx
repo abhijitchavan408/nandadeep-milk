@@ -8,12 +8,12 @@ interface PageHeaderProps {
 
 export function PageHeader({ badge, title, description }: PageHeaderProps) {
   return (
-    <section className="border-b bg-card">
+    <section className="border-b bg-gradient-to-b from-green-50/60 to-background">
       <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8 lg:py-24">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
           <Badge
             variant="secondary"
-            className="border-primary/20 bg-primary/10 text-primary"
+            className="border-green-200 bg-green-100/60 text-green-700"
           >
             {badge}
           </Badge>

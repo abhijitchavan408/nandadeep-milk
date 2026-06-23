@@ -28,7 +28,7 @@ export function SectionHeader({
         <div className={cn(align === "center" && "flex justify-center")}>
           <Badge
             variant="secondary"
-            className="border-primary/20 bg-primary/10 text-primary"
+            className="border-green-200 bg-green-100/60 text-green-700"
           >
             {badge}
           </Badge>

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 
-
+import { Providers } from '@/components/providers'
 import './globals.css'
 
 import localFont from "next/font/local";
@@ -17,23 +17,27 @@ const spaceGrotesk = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "AN Solutions | IT Solutions & Software Development",
-    template: "%s | AN Solutions Solutions",
+    default: "Gokul Dairy | Farm Fresh Milk & Dairy Products",
+    template: "%s | Gokul Dairy",
   },
   description:
-    "AN Solutions Solutions delivers cutting-edge website development, mobile app development, UI/UX design, and custom software solutions for modern businesses.",
+    "Gokul Dairy delivers farm-fresh milk, curd, paneer, ghee, and traditional dairy products to your doorstep daily. 100% pure and natural.",
   keywords: [
-    "IT solutions",
-    "web development",
-    "mobile app development",
-    "software development",
-    "UI/UX design",
-    "custom software",
+    "dairy farm",
+    "fresh milk",
+    "milk delivery",
+    "paneer",
+    "ghee",
+    "curd",
+    "dairy products",
+    "Pune dairy",
+    "दुग्ध उत्पादने",
+    "ताजे दूध",
   ],
   openGraph: {
-    title: "AN Solutions Solutions | IT Solutions & Software Development",
+    title: "Gokul Dairy | Farm Fresh Milk & Dairy Products",
     description:
-      "Cutting-edge website development, mobile app development, UI/UX design, and custom software solutions.",
+      "Farm-fresh milk, curd, paneer, ghee, and traditional dairy products delivered daily to your doorstep.",
     type: "website",
   },
   verification: {
@@ -42,7 +46,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1570EF",
+  themeColor: "#2d8a4e",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -56,7 +60,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="font-sans antialiased" suppressHydrationWarning>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );

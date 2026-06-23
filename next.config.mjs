@@ -3,8 +3,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: "export",
-  basePath: "/an-solutions",
-  assetPrefix: "/an-solutions",
+  basePath: "/nanda-milk-dairy",
+  assetPrefix: "/nanda-milk-dairy",
   trailingSlash: true,
   images: {
     unoptimized: true,

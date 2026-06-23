@@ -16,6 +16,8 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { SITE_CONFIG } from "@/lib/constants";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 const WHATSAPP_NUMBER = SITE_CONFIG.phone.replace(/[\s+\-]/g, "");
 
@@ -35,13 +37,15 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export function ContactForm() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  const { t } = useLanguage();
+  const c = translations.contact;
 
   function buildWhatsAppUrl(customMessage?: string) {
     const text =
       customMessage ||
       [
         name ? `Hi, I'm ${name}.` : "Hi,",
-        message || "I'd like to discuss a project with AN Solutions.",
+        message || t(c.defaultMessage.en, c.defaultMessage.mr),
       ].join(" ");
 
     return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
@@ -58,10 +62,10 @@ export function ContactForm() {
             </div>
             <div>
               <h3 className="font-heading text-xl font-bold">
-                Chat with Us on WhatsApp
+                {t(c.quickChat.en, c.quickChat.mr)}
               </h3>
               <p className="text-sm text-white/80">
-                Typically replies within minutes
+                {t(c.quickChatDesc.en, c.quickChatDesc.mr)}
               </p>
             </div>
           </div>
@@ -69,13 +73,10 @@ export function ContactForm() {
         <CardContent className="p-6">
           <div className="flex flex-col gap-2">
             <p className="text-sm text-muted-foreground">
-              Tap the button below to start a conversation instantly. No waiting,
-              no forms — just a direct chat with our team.
+              {t(c.quickChatText.en, c.quickChatText.mr)}
             </p>
             <a
-              href={buildWhatsAppUrl(
-                "Hi, I'd like to know more about AN Solutions services."
-              )}
+              href={buildWhatsAppUrl(t(c.defaultMessage.en, c.defaultMessage.mr))}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-3 inline-flex"
@@ -85,7 +86,7 @@ export function ContactForm() {
                 className="w-full gap-2 bg-[#25D366] text-white hover:bg-[#1da851]"
               >
                 <WhatsAppIcon className="h-5 w-5" />
-                Start Chat Now
+                {t(c.startChat.en, c.startChat.mr)}
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </a>
@@ -98,7 +99,7 @@ export function ContactForm() {
         <CardHeader>
           <div className="flex items-center gap-2">
             <CardTitle className="font-heading text-2xl">
-              Send a Personalised Message
+              {t(c.personalMessage.en, c.personalMessage.mr)}
             </CardTitle>
             <Badge
               variant="secondary"
@@ -109,27 +110,26 @@ export function ContactForm() {
             </Badge>
           </div>
           <CardDescription>
-            Fill in your details below and we will open WhatsApp with your
-            message ready to send.
+            {t(c.personalMessageDesc.en, c.personalMessageDesc.mr)}
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-              <Label htmlFor="wa-name">Your Name</Label>
+              <Label htmlFor="wa-name">{t(c.yourName.en, c.yourName.mr)}</Label>
               <Input
                 id="wa-name"
-                placeholder="John Doe"
+                placeholder={t("Your name", "तुमचे नाव")}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
 
             <div className="flex flex-col gap-2">
-              <Label htmlFor="wa-message">Your Message</Label>
+              <Label htmlFor="wa-message">{t(c.yourMessage.en, c.yourMessage.mr)}</Label>
               <Textarea
                 id="wa-message"
-                placeholder="Tell us about your project, goals, and timeline..."
+                placeholder={t(c.messagePlaceholder.en, c.messagePlaceholder.mr)}
                 className="min-h-[120px]"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -146,7 +146,7 @@ export function ContactForm() {
                 className="w-full gap-2 bg-[#25D366] text-white hover:bg-[#1da851]"
               >
                 <WhatsAppIcon className="h-5 w-5" />
-                Message on WhatsApp
+                {t(c.sendWhatsApp.en, c.sendWhatsApp.mr)}
                 <MessageCircle className="h-4 w-4" />
               </Button>
             </a>
@@ -154,13 +154,11 @@ export function ContactForm() {
             <Separator />
 
             <p className="text-center text-xs text-muted-foreground">
-              This will open WhatsApp on your device with a pre-filled message.
+              {t(c.whatsAppNote.en, c.whatsAppNote.mr)}
               <br />
-              Available on{" "}
               <span className="font-medium text-foreground">
-                Mobile &amp; Desktop
+                {t("Available on Mobile & Desktop.", "मोबाईल आणि डेस्कटॉपवर उपलब्ध.")}
               </span>
-              .
             </p>
           </div>
         </CardContent>

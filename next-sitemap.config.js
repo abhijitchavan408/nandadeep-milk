@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://abhijitchavan408.github.io/an-solutions/",
+  siteUrl: "https://abhijitchavan408.github.io/nanda-milk-dairy/",
   generateRobotsTxt: true,
 };
