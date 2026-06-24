@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   descriptionMarathi:
     "आम्ही स्थानिक शेतकऱ्यांकडून ताजे दूध संकलित करतो, स्वच्छतेने प्रक्रिया आणि पॅकेजिंग करतो आणि दररोज शुद्ध दुग्ध उत्पादने तुमच्या दारापर्यंत पोहोचवतो.",
   email: "nandadeep015@gmail.com",
-  phone: "+91 9892372738",
+  phone: "+91 9594077105",
   address: "Bhuraj Enclave Shop No, 7 Mankhurd Sation Road Mankhurd (E)Mumbai No 400088",
   addressMarathi: "भुराज एन्क्लेव्ह शॉप नं. ७, मानखुर्द स्टेशन रोड, मानखुर्द (पू) मुंबई - ४०००८८",
 } as const;
@@ -160,7 +160,7 @@ export const TEAM_MEMBERS = [
 
 export const STATS = [
   { value: "500+", labelEn: "Happy Families", labelMr: "आनंदी कुटुंबे" },
-  { value: "2000+", labelEn: "Liters Daily", labelMr: "लिटर दररोज" },
+  { value: "7000+", labelEn: "Liters Daily", labelMr: "लिटर दररोज" },
   { value: "15+", labelEn: "Years of Trust", labelMr: "विश्वासाची वर्षे" },
   { value: "10+", labelEn: "Dairy Products", labelMr: "दुग्ध उत्पादने" },
 ] as const;
@@ -168,9 +168,9 @@ export const STATS = [
 export const TESTIMONIALS = [
   {
     quote:
-      "We have been getting milk from Nandadeep Milk Dairy for 5 years now. The quality and freshness is unmatched. Our children love it!",
+      "We have been getting milk from Nandadeep Milk Dairy for 10 years now. The quality and freshness is unmatched.",
     quoteMr:
-      "आम्ही गेल्या ५ वर्षांपासून नंददीप दूध डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे. आमच्या मुलांना ते आवडते!",
+      "आम्ही गेल्या १० वर्षांपासून नंददीप दूध डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे.",
     author: "Tata Power",   
     authorMr: "टाटा पॉवर",
     role: "Mumbai, India",
@@ -178,9 +178,9 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "The paneer is incredibly fresh and soft. I use it in all my cooking. The desi ghee also has an amazing aroma — just like the old days!",
+      "We trust Nandadeep for our daily milk and dairy needs. The quality is consistently excellent and delivery is always on time. Highly reliable!",
     quoteMr:
-      "पनीर अविश्वसनीयपणे ताजे आणि मऊ आहे. मी ते माझ्या सर्व स्वयंपाकात वापरते. देसी तूपाचा सुगंधही अप्रतिम आहे — जुन्या दिवसांसारखा!",
+      "आम्ही आमच्या दैनंदिन दूध आणि दुग्ध गरजांसाठी नंददीपवर विश्वास ठेवतो. गुणवत्ता सातत्याने उत्कृष्ट आहे आणि डिलिव्हरी नेहमी वेळेवर असते. अत्यंत विश्वासार्ह!",
     author: "Kokilaben Hospital",
     authorMr: "कोकिलाबेन हॉस्पिटल",
     role: "Mumbai, India",
@@ -188,11 +188,21 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "Best dairy products in Mumbai! The morning delivery is always on time and the milk tastes absolutely pure. Highly recommended!",
+      "Nandadeep Milk Dairy has been our trusted supplier for pure milk and curd. The freshness and hygiene standards are top-notch. Our patients benefit greatly.",
     quoteMr:
-      "मुंबईतील सर्वोत्तम दुग्ध उत्पादने! सकाळची डिलिव्हरी नेहमी वेळेवर असते आणि दुधाची चव अगदी शुद्ध असते. अत्यंत शिफारस!",
-    author: "Saikrupa Food All BARC Canteen",
-    authorMr: "साईकृपा फूड ऑल बीएआरसी कॅन्टीन",
+      "नंददीप दूध डेअरी हे शुद्ध दूध आणि दही यांचे आमचे विश्वासू पुरवठादार आहेत. ताजेपणा आणि स्वच्छता मानके उत्कृष्ट आहेत. आमच्या रुग्णांना खूप फायदा होतो.",
+    author: "Sommya Hospital",
+    authorMr: "सोम्म्या हॉस्पिटल",
+    role: "Mumbai, India",
+    roleMr: "मुंबई, भारत",
+  },
+  {
+    quote:
+      "Our college canteen serves hundreds of students daily. Nandadeep ensures we get fresh milk and paneer every morning without fail. Great service!",
+    quoteMr:
+      "आमच्या कॉलेज कॅन्टीनमध्ये दररोज शेकडो विद्यार्थ्यांना जेवण दिले जाते. नंददीप दररोज सकाळी ताजे दूध आणि पनीर विना अपयश पुरवतो. उत्तम सेवा!",
+    author: "Sommya College",
+    authorMr: "सोम्म्या कॉलेज",
     role: "Mumbai, India",
     roleMr: "मुंबई, भारत",
   },
