@@ -100,7 +100,7 @@ export function HeroSection() {
                 <span className="text-xl">🥛</span>
               </div>
               <div>
-                <p className="text-sm font-bold text-foreground">2000+ L</p>
+                <p className="text-sm font-bold text-foreground">7000+ L</p>
                 <p className="text-xs text-muted-foreground">{t("Daily Fresh Milk", "दररोज ताजे दूध")}</p>
               </div>
             </div>
