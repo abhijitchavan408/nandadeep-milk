@@ -17,27 +17,27 @@ const spaceGrotesk = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nandadeep Milk Dairy | Farm Fresh Milk & Dairy Products",
+    default: "Nandadeep Milk Dairy | Pure Milk & Dairy Products",
     template: "%s | Nandadeep Milk Dairy",
   },
   description:
-    "Nandadeep Milk Dairy delivers farm-fresh milk, curd, paneer, ghee, and traditional dairy products to your doorstep daily. 100% pure and natural.",
+    "Nandadeep Milk Dairy collects fresh milk from local farmers, processes it hygienically, and delivers pure dairy products to your doorstep daily. 100% pure and natural.",
   keywords: [
-    "dairy farm",
-    "fresh milk",
+    "dairy products",
     "milk delivery",
+    "fresh milk",
     "paneer",
     "ghee",
     "curd",
-    "dairy products",
-    "Pune dairy",
+    "Mumbai dairy",
+    "milk supplier",
     "दुग्ध उत्पादने",
     "ताजे दूध",
   ],
   openGraph: {
-    title: "Nandadeep Milk Dairy | Farm Fresh Milk & Dairy Products",
+    title: "Nandadeep Milk Dairy | Pure Milk & Dairy Products",
     description:
-      "Farm-fresh milk, curd, paneer, ghee, and traditional dairy products delivered daily to your doorstep.",
+      "Pure milk sourced from local farmers, processed hygienically, and delivered fresh daily to your doorstep.",
     type: "website",
   },
   verification: {

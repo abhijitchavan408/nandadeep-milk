@@ -89,8 +89,8 @@ export function HeroSection() {
           {/* Floating badge - Grass-Fed Cows */}
           <div className="absolute -bottom-4 -left-2 mb-16 rounded-2xl bg-white/90 px-4 py-2.5 shadow-lg backdrop-blur-sm md:-bottom-6 md:-left-4 md:mb-20">
             <div className="flex items-center gap-2">
-              <span className="text-lg">🐄</span>
-              <p className="text-xs font-semibold text-foreground">{t("Grass-Fed Cows", "गवत खाणाऱ्या गायी")}</p>
+              <span className="text-lg">🤝</span>
+              <p className="text-xs font-semibold text-foreground">{t("Trusted Farmers", "विश्वासू शेतकरी")}</p>
             </div>
           </div>
           {/* Floating badge - bottom left */}

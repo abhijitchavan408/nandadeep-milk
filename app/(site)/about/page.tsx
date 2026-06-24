@@ -30,10 +30,10 @@ export default function AboutPage() {
     },
     {
       icon: Leaf,
-      title: { en: "Grass-Fed Cattle", mr: "गवत खाणारे गुरे" },
+      title: { en: "Trusted Farmers", mr: "विश्वासू शेतकरी" },
       description: {
-        en: "Our cows and buffaloes are raised on natural pastures, ensuring the richest and most nutritious milk.",
-        mr: "आमच्या गायी आणि म्हशी नैसर्गिक कुरणावर वाढवल्या जातात, ज्यामुळे सर्वात समृद्ध आणि पौष्टिक दूध मिळते.",
+        en: "We source milk directly from trusted local farmers who follow natural and ethical farming practices.",
+        mr: "आम्ही नैसर्गिक आणि नैतिक शेती पद्धतींचे पालन करणाऱ्या विश्वासू स्थानिक शेतकऱ्यांकडून थेट दूध संकलित करतो.",
       },
     },
     {

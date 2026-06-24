@@ -4,9 +4,9 @@ export const SITE_CONFIG = {
   tagline: "Farm Fresh Dairy Goodness, Delivered Daily",
   taglineMarathi: "शेतातून ताजे दुग्ध उत्पादने, दररोज डिलिव्हरी",
   description:
-    "From our farm to your family — experience the richness of pure milk, fresh curd, creamy paneer, and traditional dairy products.",
+    "We collect fresh milk from local farmers, process & package it hygienically, and deliver pure dairy products to your doorstep daily.",
   descriptionMarathi:
-    "आमच्या शेतातून तुमच्या कुटुंबापर्यंत — शुद्ध दूध, ताजे दही, मलईदार पनीर आणि पारंपरिक दुग्ध उत्पादनांचा अनुभव घ्या.",
+    "आम्ही स्थानिक शेतकऱ्यांकडून ताजे दूध संकलित करतो, स्वच्छतेने प्रक्रिया आणि पॅकेजिंग करतो आणि दररोज शुद्ध दुग्ध उत्पादने तुमच्या दारापर्यंत पोहोचवतो.",
   email: "nandadeep015@gmail.com",
   phone: "+91 9892372738",
   address: "Bhuraj Enclave Shop No, 7 Mankhurd Sation Road Mankhurd (E)Mumbai No 400088",
@@ -26,24 +26,24 @@ export const SERVICES = [
     title: "Fresh Milk",
     titleMr: "ताजे दूध",
     shortDescription:
-      "Pure, farm-fresh cow and buffalo milk delivered to your doorstep every morning.",
+      "Pure cow and buffalo milk sourced from trusted local farmers, delivered fresh to your doorstep every morning.",
     shortDescriptionMr:
-      "दररोज सकाळी शुद्ध, शेतातून ताजे गाय आणि म्हशीचे दूध तुमच्या दारापर्यंत.",
+      "विश्वासू स्थानिक शेतकऱ्यांकडून संकलित शुद्ध गाय आणि म्हशीचे दूध, दररोज सकाळी तुमच्या दारापर्यंत ताजे.",
     fullDescription:
-      "Our farm-fresh milk comes directly from our healthy, grass-fed cows and buffaloes. We ensure the highest quality through rigorous hygiene standards and cold chain delivery so you get the purest milk every single morning.",
+      "We source fresh milk daily from trusted local farmers, process it under strict hygiene standards, and deliver it through our cold chain system so you get the purest milk every single morning.",
     fullDescriptionMr:
-      "आमचे शेतातून ताजे दूध आमच्या निरोगी, गवत खाणाऱ्या गायी आणि म्हशींकडून थेट येते. कडक स्वच्छता मानके आणि कोल्ड चेन डिलिव्हरीद्वारे आम्ही सर्वोच्च गुणवत्ता सुनिश्चित करतो.",
+      "आम्ही दररोज विश्वासू स्थानिक शेतकऱ्यांकडून ताजे दूध संकलित करतो, कडक स्वच्छता मानकांनुसार प्रक्रिया करतो आणि कोल्ड चेन प्रणालीद्वारे वितरित करतो जेणेकरून तुम्हाला दररोज सकाळी शुद्ध दूध मिळेल.",
     features: [
-      "Farm-fresh cow milk",
-      "Rich buffalo milk",
+      "Sourced from local farmers",
+      "Cow & buffalo milk",
       "A2 milk available",
       "Morning home delivery",
       "No preservatives added",
       "Hygienic cold chain",
     ],
     featuresMr: [
-      "शेतातून ताजे गाईचे दूध",
-      "समृद्ध म्हशीचे दूध",
+      "स्थानिक शेतकऱ्यांकडून संकलित",
+      "गाय आणि म्हशीचे दूध",
       "A2 दूध उपलब्ध",
       "सकाळी होम डिलिव्हरी",
       "कोणतेही प्रिझर्व्हेटिव्ह नाही",
@@ -153,8 +153,8 @@ export const TEAM_MEMBERS = [
     nameMr: "बाबुराव गोमे",
     role: "Founder & Owner",
     roleMr: "संस्थापक आणि मालक",
-    bio: "15+ years of dairy farming expertise. Passionate about delivering pure, farm-fresh dairy products to every household.",
-    bioMr: "१५+ वर्षांचा दुग्ध व्यवसाय अनुभव. प्रत्येक घरापर्यंत शुद्ध, शेतातून ताजे दुग्ध उत्पादने पोहोचवण्याची आवड.",
+    bio: "15+ years of dairy business expertise. Passionate about connecting local farmers to customers with pure, fresh dairy products.",
+    bioMr: "१५+ वर्षांचा दुग्ध व्यवसाय अनुभव. स्थानिक शेतकऱ्यांना ग्राहकांशी शुद्ध, ताज्या दुग्ध उत्पादनांद्वारे जोडण्याची आवड.",
   }
 ] as const;
 
@@ -162,7 +162,7 @@ export const STATS = [
   { value: "500+", labelEn: "Happy Families", labelMr: "आनंदी कुटुंबे" },
   { value: "2000+", labelEn: "Liters Daily", labelMr: "लिटर दररोज" },
   { value: "15+", labelEn: "Years of Trust", labelMr: "विश्वासाची वर्षे" },
-  { value: "20+", labelEn: "Dairy Products", labelMr: "दुग्ध उत्पादने" },
+  { value: "10+", labelEn: "Dairy Products", labelMr: "दुग्ध उत्पादने" },
 ] as const;
 
 export const TESTIMONIALS = [
@@ -191,8 +191,8 @@ export const TESTIMONIALS = [
       "Best dairy products in Mumbai! The morning delivery is always on time and the milk tastes absolutely pure. Highly recommended!",
     quoteMr:
       "मुंबईतील सर्वोत्तम दुग्ध उत्पादने! सकाळची डिलिव्हरी नेहमी वेळेवर असते आणि दुधाची चव अगदी शुद्ध असते. अत्यंत शिफारस!",
-    author: "Saikrupa Food All BARC Cateene",
-    authorMr: "साईकृपा फूड ऑल बीएआरसी कॅटीन",
+    author: "Saikrupa Food All BARC Canteen",
+    authorMr: "साईकृपा फूड ऑल बीएआरसी कॅन्टीन",
     role: "Mumbai, India",
     roleMr: "मुंबई, भारत",
   },
