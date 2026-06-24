@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -29,9 +30,13 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2.5 transition-opacity hover:opacity-80"
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-green-600 to-green-500">
-            <span className="text-lg">🥛</span>
-          </div>
+          <Image
+            src="/images/logo.jpg"
+            alt="Nandadeep Milk Dairy Logo"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-lg object-cover"
+          />
           <span className="font-heading text-lg font-bold text-foreground">
             {language === "en" ? SITE_CONFIG.name : SITE_CONFIG.nameMarathi}
           </span>
@@ -94,9 +99,13 @@ export function Navbar() {
                   className="flex items-center gap-2"
                   onClick={() => setOpen(false)}
                 >
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-green-600 to-green-500">
-                    <span className="text-lg">🥛</span>
-                  </div>
+                  <Image
+                    src="/images/logo.jpg"
+                    alt="Nandadeep Milk Dairy Logo"
+                    width={36}
+                    height={36}
+                    className="h-9 w-9 rounded-lg object-cover"
+                  />
                   <span className="font-heading text-lg font-bold text-foreground">
                     {language === "en" ? SITE_CONFIG.name : SITE_CONFIG.nameMarathi}
                   </span>

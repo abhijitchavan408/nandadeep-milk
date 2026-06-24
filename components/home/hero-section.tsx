@@ -6,8 +6,7 @@ import { ArrowRight, CheckCircle2, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/lib/language-context";
 import { translations } from "@/lib/translations";
-import { DAIRY_IMAGES } from "@/lib/constants";
-import landing from "@/public/images/landing page image.png";
+import landing from "@/public/images/landing-page-image.jpg";
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -87,7 +86,14 @@ export function HeroSection() {
               sizes="(max-width: 768px) 300px, (max-width: 1024px) 420px, 480px"
             />
           </div>
-          {/* Floating badge */}
+          {/* Floating badge - Grass-Fed Cows */}
+          <div className="absolute -bottom-4 -left-2 mb-16 rounded-2xl bg-white/90 px-4 py-2.5 shadow-lg backdrop-blur-sm md:-bottom-6 md:-left-4 md:mb-20">
+            <div className="flex items-center gap-2">
+              <span className="text-lg">🐄</span>
+              <p className="text-xs font-semibold text-foreground">{t("Grass-Fed Cows", "गवत खाणाऱ्या गायी")}</p>
+            </div>
+          </div>
+          {/* Floating badge - bottom left */}
           <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white/90 px-5 py-3 shadow-lg backdrop-blur-sm md:-bottom-6 md:-left-6">
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
@@ -97,13 +103,6 @@ export function HeroSection() {
                 <p className="text-sm font-bold text-foreground">2000+ L</p>
                 <p className="text-xs text-muted-foreground">{t("Daily Fresh Milk", "दररोज ताजे दूध")}</p>
               </div>
-            </div>
-          </div>
-          {/* Floating badge top-right */}
-          <div className="absolute -right-2 top-4 rounded-2xl bg-white/90 px-4 py-2.5 shadow-lg backdrop-blur-sm md:-right-4 md:top-8">
-            <div className="flex items-center gap-2">
-              <span className="text-lg">🐄</span>
-              <p className="text-xs font-semibold text-foreground">{t("Grass-Fed Cows", "गवत खाणाऱ्या गायी")}</p>
             </div>
           </div>
         </div>

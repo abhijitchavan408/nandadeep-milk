@@ -9,9 +9,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { TeamCard } from "@/components/about/team-card";
 import { StatsSection } from "@/components/home/stats-section";
 import { CTASection } from "@/components/home/cta-section";
-import { TEAM_MEMBERS, DAIRY_IMAGES } from "@/lib/constants";
+import { TEAM_MEMBERS } from "@/lib/constants";
 import { useLanguage } from "@/lib/language-context";
 import { translations } from "@/lib/translations";
+import farm from "@/public/images/farm.jpg";
+import owner from "@/public/images/owner.jpg";
 
 export default function AboutPage() {
   const { language, t } = useLanguage();
@@ -76,7 +78,7 @@ export default function AboutPage() {
           </div>
           <div className="relative overflow-hidden rounded-2xl">
             <Image
-              src={DAIRY_IMAGES.farm}
+              src={farm}
               alt={t("Our dairy farm", "आमचे डेअरी फार्म")}
               width={600}
               height={400}
@@ -124,25 +126,23 @@ export default function AboutPage() {
 
       <StatsSection />
 
-      {/* Team */}
+      {/* Owner */}
       <SectionWrapper>
         <SectionHeader
           badge={t(a.teamBadge.en, a.teamBadge.mr)}
           title={t(a.teamTitle.en, a.teamTitle.mr)}
           description={t(a.teamDescription.en, a.teamDescription.mr)}
         />
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {TEAM_MEMBERS.map((member) => (
-            <TeamCard
-              key={member.name}
-              name={member.name}
-              nameMr={member.nameMr}
-              role={member.role}
-              roleMr={member.roleMr}
-              bio={member.bio}
-              bioMr={member.bioMr}
-            />
-          ))}
+        <div className="mt-12 flex justify-center">
+          <TeamCard
+            name={TEAM_MEMBERS[0].name}
+            nameMr={TEAM_MEMBERS[0].nameMr}
+            role={TEAM_MEMBERS[0].role}
+            roleMr={TEAM_MEMBERS[0].roleMr}
+            bio={TEAM_MEMBERS[0].bio}
+            bioMr={TEAM_MEMBERS[0].bioMr}
+            image={owner.src}
+          />
         </div>
       </SectionWrapper>
 

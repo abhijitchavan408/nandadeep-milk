@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { SITE_CONFIG, NAV_LINKS } from "@/lib/constants";
@@ -24,9 +25,13 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-4 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-green-600 to-green-500">
-                <span className="text-lg">🥛</span>
-              </div>
+              <Image
+                src="/images/logo.jpg"
+                alt="Nandadeep Milk Dairy Logo"
+                width={36}
+                height={36}
+                className="h-9 w-9 rounded-lg object-cover"
+              />
               <span className="font-heading text-lg font-bold text-foreground">
                 {language === "en" ? SITE_CONFIG.name : SITE_CONFIG.nameMarathi}
               </span>

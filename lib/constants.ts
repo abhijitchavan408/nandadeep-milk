@@ -7,10 +7,10 @@ export const SITE_CONFIG = {
     "From our farm to your family — experience the richness of pure milk, fresh curd, creamy paneer, and traditional dairy products.",
   descriptionMarathi:
     "आमच्या शेतातून तुमच्या कुटुंबापर्यंत — शुद्ध दूध, ताजे दही, मलईदार पनीर आणि पारंपरिक दुग्ध उत्पादनांचा अनुभव घ्या.",
-  email: "nandadeepmilkdairy@gmail.com",
-  phone: "+91 9657782463",
-  address: "Nandadeep Milk Dairy Farm, Kharadi, Pune - 411014",
-  addressMarathi: "नंददीप दूध डेअरी फार्म, खराडी, पुणे - ४११०१४",
+  email: "nandadeep015@gmail.com",
+  phone: "+91 9892372738",
+  address: "Bhuraj Enclave Shop No, 7 Mankhurd Sation Road Mankhurd (E)Mumbai No 400088",
+  addressMarathi: "भुराज एन्क्लेव्ह शॉप नं. ७, मानखुर्द स्टेशन रोड, मानखुर्द (पू) मुंबई - ४०००८८",
 } as const;
 
 export const NAV_LINKS = [
@@ -153,25 +153,9 @@ export const TEAM_MEMBERS = [
     nameMr: "बाबुराव गोमे",
     role: "Founder & Owner",
     roleMr: "संस्थापक आणि मालक",
-    bio: "15+ years of dairy farming expertise",
-    bioMr: "१५+ वर्षांचा दुग्ध व्यवसाय अनुभव",
-  },
-  {
-    name: "Nanda Gome",
-    nameMr: "नंदा गोमे",
-    role: "Quality Manager",
-    roleMr: "गुणवत्ता व्यवस्थापक",
-    bio: "Ensures the highest quality standards for all our products.",
-    bioMr: "आमच्या सर्व उत्पादनांसाठी सर्वोच्च गुणवत्ता मानके सुनिश्चित करतात.",
-  },
-  {
-    name: "Ranjit Chavan",
-    nameMr: "रणजित चव्हाण",
-    role: "Farm Operations Head",
-    roleMr: "फार्म ऑपरेशन्स प्रमुख",
-    bio: "Manages daily operations and cattle welfare at the farm.",
-    bioMr: "शेतातील दैनंदिन कार्ये आणि गुरांची काळजी यांचे व्यवस्थापन.",
-  },
+    bio: "15+ years of dairy farming expertise. Passionate about delivering pure, farm-fresh dairy products to every household.",
+    bioMr: "१५+ वर्षांचा दुग्ध व्यवसाय अनुभव. प्रत्येक घरापर्यंत शुद्ध, शेतातून ताजे दुग्ध उत्पादने पोहोचवण्याची आवड.",
+  }
 ] as const;
 
 export const STATS = [
@@ -187,45 +171,32 @@ export const TESTIMONIALS = [
       "We have been getting milk from Nandadeep Milk Dairy for 5 years now. The quality and freshness is unmatched. Our children love it!",
     quoteMr:
       "आम्ही गेल्या ५ वर्षांपासून नंददीप दूध डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे. आमच्या मुलांना ते आवडते!",
-    author: "Sunita Patil",
-    authorMr: "सुनिता पाटील",
-    role: "Homemaker, Kharadi",
-    roleMr: "गृहिणी, खराडी",
+    author: "Tata Power",   
+    authorMr: "टाटा पॉवर",
+    role: "Mumbai, India",
+    roleMr: "मुंबई, भारत",
   },
   {
     quote:
       "The paneer is incredibly fresh and soft. I use it in all my cooking. The desi ghee also has an amazing aroma — just like the old days!",
     quoteMr:
       "पनीर अविश्वसनीयपणे ताजे आणि मऊ आहे. मी ते माझ्या सर्व स्वयंपाकात वापरते. देसी तूपाचा सुगंधही अप्रतिम आहे — जुन्या दिवसांसारखा!",
-    author: "Rajesh Deshmukh",
-    authorMr: "राजेश देशमुख",
-    role: "Restaurant Owner, Pune",
-    roleMr: "रेस्टॉरंट मालक, पुणे",
+    author: "Kokilaben Hospital",
+    authorMr: "कोकिलाबेन हॉस्पिटल",
+    role: "Mumbai, India",
+    roleMr: "मुंबई, भारत",
   },
   {
     quote:
-      "Best dairy products in Pune! The morning delivery is always on time and the milk tastes absolutely pure. Highly recommended!",
+      "Best dairy products in Mumbai! The morning delivery is always on time and the milk tastes absolutely pure. Highly recommended!",
     quoteMr:
-      "पुण्यातील सर्वोत्तम दुग्ध उत्पादने! सकाळची डिलिव्हरी नेहमी वेळेवर असते आणि दुधाची चव अगदी शुद्ध असते. अत्यंत शिफारस!",
-    author: "Meera Joshi",
-    authorMr: "मीरा जोशी",
-    role: "Health Coach, Viman Nagar",
-    roleMr: "हेल्थ कोच, विमान नगर",
+      "मुंबईतील सर्वोत्तम दुग्ध उत्पादने! सकाळची डिलिव्हरी नेहमी वेळेवर असते आणि दुधाची चव अगदी शुद्ध असते. अत्यंत शिफारस!",
+    author: "Saikrupa Food All BARC Cateene",
+    authorMr: "साईकृपा फूड ऑल बीएआरसी कॅटीन",
+    role: "Mumbai, India",
+    roleMr: "मुंबई, भारत",
   },
 ] as const;
 
 // Dairy images from Unsplash (free to use)
-export const DAIRY_IMAGES = {
-  hero: "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=1200&q=80",
-  heroMobile: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&q=80",
-  milk: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&q=80",
-  cow: "https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=800&q=80",
-  farm: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80",
-  curd: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80",
-  paneer: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=800&q=80",
-  ghee: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=800&q=80",
-  butter: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=800&q=80",
-  cheese: "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&q=80",
-  delivery: "https://images.unsplash.com/photo-1544085311-11a028465b03?w=800&q=80",
-  bottles: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=800&q=80",
-} as const;
+
