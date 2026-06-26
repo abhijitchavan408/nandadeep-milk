@@ -85,7 +85,7 @@ export const translations = {
     storyTitle: { en: "Our Story", mr: "आमची कथा" },
     storyP1: {
       en: "Nandadeep Milk Dairy started over 15 years ago with a simple mission: to bridge the gap between local dairy farmers and families who deserve pure, fresh milk. What began as a small collection and distribution operation has grown into a trusted dairy business serving hundreds of families and businesses daily.",
-      mr: "नंददीप दूध डेअरी १५ वर्षांपूर्वी एका साध्या ध्येयाने सुरू झाले: स्थानिक दुग्ध शेतकरी आणि शुद्ध, ताजे दूध हवे असलेल्या कुटुंबांमधील अंतर कमी करणे. एका छोट्या संकलन आणि वितरण व्यवसायातून हे दररोज शेकडो कुटुंबे आणि व्यवसायांना सेवा देणारे विश्वासू डेअरी व्यवसाय बनले आहे.",
+      mr: "नंदादीप दूध डेअरी १५ वर्षांपूर्वी एका साध्या ध्येयाने सुरू झाले: स्थानिक दुग्ध शेतकरी आणि शुद्ध, ताजे दूध हवे असलेल्या कुटुंबांमधील अंतर कमी करणे. एका छोट्या संकलन आणि वितरण व्यवसायातून हे दररोज शेकडो कुटुंबे आणि व्यवसायांना सेवा देणारे विश्वासू डेअरी व्यवसाय बनले आहे.",
     },
     storyP2: {
       en: "We work directly with local farmers, ensuring fair prices for their produce while maintaining strict quality and hygiene standards during collection, processing, and packaging. Every batch of milk undergoes rigorous quality checks before reaching your doorstep each morning.",
@@ -103,10 +103,81 @@ export const translations = {
       mr: "आमची मूलभूत मूल्ये आम्ही वितरीत करत असलेल्या दुधाच्या प्रत्येक थेंबाला आणि आम्ही बनवत असलेल्या प्रत्येक उत्पादनाला आकार देतात.",
     },
     teamBadge: { en: "Our Leadership", mr: "आमचे नेतृत्व" },
-    teamTitle: { en: "The Person Behind Nandadeep", mr: "नंददीपमागील व्यक्ती" },
+    teamTitle: { en: "The Person Behind Nandadeep", mr: "नंदादीपमागील व्यक्ती" },
     teamDescription: {
       en: "Dedicated to ensuring you receive the freshest dairy products sourced directly from trusted farmers.",
       mr: "विश्वासू शेतकऱ्यांकडून थेट संकलित केलेली ताजी दुग्ध उत्पादने तुम्हाला मिळतील याची खात्री करण्यासाठी समर्पित.",
+    },
+    locationsTitle: { en: "Our Dairy Locations", mr: "आमचे डेअरी स्थान" },
+    locationsBadge: { en: "Two Locations", mr: "दोन स्थान" },
+    locationsDescription: {
+      en: "We operate from two strategically located facilities to ensure the freshest milk reaches you every morning.",
+      mr: "आम्ही दोन रणनीतिकपणे स्थित सुविधांवरून काय करतो ताकि सर्वात ताजे दूध तुम्हाला दररोज सकाळी मिळेल.",
+    },
+    tembhurniTitle: { en: "Tembhurni Farm", mr: "टेंभुर्णी फार्म" },
+    tembhurniDescription: {
+      en: "Our primary collection center in Tembhurni where we source fresh milk directly from local farmers. This is where our dairy journey begins — with careful collection, testing, and initial processing to maintain the milk's purity and freshness from the very start.",
+      mr: "टेंभुर्णीतील आमचे प्राथमिक संकलन केंद्र जेथे आम्ही स्थानिक शेतकऱ्यांकडून थेट ताजे दूध संकलित करतो. येथेच आमचा डेअरी प्रवास सुरू होतो — दुधाची शुद्धता आणि ताजेपणा सुरुवातीपासून ही राखण्यासाठी काळजीपूर्वक संकलन, तपासणी आणि प्रारंभिक प्रक्रिया.",
+    },
+    mumbaiTitle: { en: "Mumbai Processing Center", mr: "मुंबई प्रक्रिया केंद्र" },
+    mumbaiDescription: {
+      en: "Our state-of-the-art processing facility in Mumbai where milk from Tembhurni is hygienic transportation and further processed under strict quality standards. Here, we create all our dairy products — fresh curd, paneer, ghee, butter, and more — all prepared with care and delivered fresh to your doorstep.",
+      mr: "मुंबईतील आमची आधुनिक प्रक्रिया सुविधा जेथे टेंभुर्णीचे दूध स्वच्छतेने वाहतूक केले जाते आणि कडक गुणवत्ता मानकांनुसार अधिक प्रक्रिया केली जाते. येथे, आम्ही आमची सर्व दुग्ध उत्पादने तयार करतो — ताजे दही, पनीर, तूप, लोणी आणि बरेच काही — सर्व काळजीपूर्वक तयार आणि तुमच्या दारापर्यंत ताजी वितरित केली जाते.",
+    },
+    operationsFlow: {
+      en: "From Farm to Your Door",
+      mr: "शेतातून तुमच्या दारापर्यंत",
+    },
+    step1: { en: "Collection", mr: "संकलन" },
+    step1Desc: {
+      en: "Fresh milk collected from trusted farmers in Tembhurni",
+      mr: "टेंभुर्णीतील विश्वासू शेतकऱ्यांकडून ताजे दूध संकलित",
+    },
+    step2: { en: "Quality Check", mr: "गुणवत्ता तपासणी" },
+    step2Desc: {
+      en: "Rigorous testing and quality assurance at the farm",
+      mr: "फार्मवर कडक तपासणी आणि गुणवत्ता आश्वासन",
+    },
+    step3: { en: "Hygienic Transport", mr: "स्वच्छ परिवहन" },
+    step3Desc: {
+      en: "Milk transported in refrigerated vehicles to Mumbai",
+      mr: "दूध एअर-कंडीशन्ड वाहनांमध्ये मुंबईला वाहतूक केले जाते",
+    },
+    step4: { en: "Processing", mr: "प्रक्रिया" },
+    step4Desc: {
+      en: "Expert processing to create fresh products",
+      mr: "ताजी उत्पादने तयार करण्यासाठी तज्ञ प्रक्रिया",
+    },
+    step5: { en: "Final QC", mr: "अंतिम तपासणी" },
+    step5Desc: {
+      en: "Final quality check before packaging",
+      mr: "पॅकेजिंगपूर्वी अंतिम गुणवत्ता तपासणी",
+    },
+    step6: { en: "Home Delivery", mr: "होम डिलिव्हरी" },
+    step6Desc: {
+      en: "Fresh products delivered to your doorstep each morning",
+      mr: "दररोज सकाळी तुमच्या दारापर्यंत ताजी उत्पादने",
+    },
+    whyTwoLocationsTitle: { en: "Why Two Locations?", mr: "दोन स्थान का?" },
+    farmerPartnershipTitle: { en: "Farmer Partnership", mr: "शेतकरी भागीदारी" },
+    farmerPartnershipDesc: {
+      en: "Our Tembhurni facility works directly with local farmers, supporting agricultural communities while ensuring quality from the source.",
+      mr: "आमची टेंभुर्णी सुविधा स्थानिक शेतकऱ्यांशी थेट काम करते, कृषी समुदायांना समर्थन देते आणि स्रोताधून गुणवत्ता सुनिश्चित करते.",
+    },
+    distributionExcellenceTitle: { en: "Distribution Excellence", mr: "वितरण उत्कृष्टता" },
+    distributionExcellenceDesc: {
+      en: "Our Mumbai center enables rapid, efficient delivery to your doorstep while maintaining the cold chain and product quality.",
+      mr: "आमचे मुंबई केंद्र कोल्ड चेन आणि उत्पाद गुणवत्ता राखून तुमच्या दारापर्यंत जलद, कुशल वितरण सक्षम करते.",
+    },
+    strategicLocationTitle: { en: "Strategic Location", mr: "रणनीतिक स्थान" },
+    strategicLocationDesc: {
+      en: "The two-location model ensures fresher milk, better quality control, and faster delivery to thousands of families.",
+      mr: "दोन-स्थान मॉडेल ताजे दूध, उत्तम गुणवत्ता नियंत्रण आणि हजारो कुटुंबांना जलद वितरण सुनिश्चित करते.",
+    },
+    qualityConsistencyTitle: { en: "Quality Consistency", mr: "गुणवत्ता सातत्य" },
+    qualityConsistencyDesc: {
+      en: "Multiple checkpoints throughout the journey guarantee consistent quality and freshness in every delivery.",
+      mr: "संपूर्ण प्रवासात अनेक चेकपॉइंट्स प्रत्येक वितरणात सातत्यपूर्ण गुणवत्ता आणि ताजेपणा हमी देतात.",
     },
   },
 

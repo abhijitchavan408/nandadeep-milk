@@ -7,6 +7,7 @@ import { SectionWrapper } from "@/components/shared/section-wrapper";
 import { SectionHeader } from "@/components/shared/section-header";
 import { Card, CardContent } from "@/components/ui/card";
 import { TeamCard } from "@/components/about/team-card";
+import { DairyLocations } from "@/components/about/dairy-locations";
 import { StatsSection } from "@/components/home/stats-section";
 import { CTASection } from "@/components/home/cta-section";
 import { TEAM_MEMBERS } from "@/lib/constants";
@@ -95,6 +96,79 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+        </div>
+      </SectionWrapper>
+
+            {/* Dairy Locations */}
+      <SectionWrapper className="bg-white">
+        <SectionHeader
+          badge={t(a.locationsBadge.en, a.locationsBadge.mr)}
+          title={t(a.locationsTitle.en, a.locationsTitle.mr)}
+          description={t(a.locationsDescription.en, a.locationsDescription.mr)}
+        />
+        <div className="mt-12">
+          <DairyLocations
+            tembhurniTitle={t(a.tembhurniTitle.en, a.tembhurniTitle.mr)}
+            tembhurniDescription={t(
+              a.tembhurniDescription.en,
+              a.tembhurniDescription.mr
+            )}
+            mumbaiTitle={t(a.mumbaiTitle.en, a.mumbaiTitle.mr)}
+            mumbaiDescription={t(
+              a.mumbaiDescription.en,
+              a.mumbaiDescription.mr
+            )}
+            whyTwoLocationsTitle={t(
+              a.whyTwoLocationsTitle.en,
+              a.whyTwoLocationsTitle.mr
+            )}
+            farmerPartnershipTitle={t(
+              a.farmerPartnershipTitle.en,
+              a.farmerPartnershipTitle.mr
+            )}
+            farmerPartnershipDesc={t(
+              a.farmerPartnershipDesc.en,
+              a.farmerPartnershipDesc.mr
+            )}
+            distributionExcellenceTitle={t(
+              a.distributionExcellenceTitle.en,
+              a.distributionExcellenceTitle.mr
+            )}
+            distributionExcellenceDesc={t(
+              a.distributionExcellenceDesc.en,
+              a.distributionExcellenceDesc.mr
+            )}
+            strategicLocationTitle={t(
+              a.strategicLocationTitle.en,
+              a.strategicLocationTitle.mr
+            )}
+            strategicLocationDesc={t(
+              a.strategicLocationDesc.en,
+              a.strategicLocationDesc.mr
+            )}
+            qualityConsistencyTitle={t(
+              a.qualityConsistencyTitle.en,
+              a.qualityConsistencyTitle.mr
+            )}
+            qualityConsistencyDesc={t(
+              a.qualityConsistencyDesc.en,
+              a.qualityConsistencyDesc.mr
+            )}
+            tembhurniImages={[
+              // Add your Tembhurni images here
+              "/images/tembhurni-1.jpg",
+              "/images/tembhurni-2.jpg",
+              "/images/tembhurni-3.jpg",
+              "/images/tembhurni-4.jpg",
+            ]}
+            mumbaiImages={[
+              // Add your Mumbai images here
+              "/images/mumbai-1.jpg",
+              "/images/mumbai-2.jpg",
+               "/images/tembhurni-5.jpg",
+              "/images/tembhurni-6.jpg",
+            ]}
+          />
         </div>
       </SectionWrapper>
 

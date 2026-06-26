@@ -86,13 +86,6 @@ export function HeroSection() {
               sizes="(max-width: 768px) 300px, (max-width: 1024px) 420px, 480px"
             />
           </div>
-          {/* Floating badge - Grass-Fed Cows */}
-          <div className="absolute -bottom-4 -left-2 mb-16 rounded-2xl bg-white/90 px-4 py-2.5 shadow-lg backdrop-blur-sm md:-bottom-6 md:-left-4 md:mb-20">
-            <div className="flex items-center gap-2">
-              <span className="text-lg">🤝</span>
-              <p className="text-xs font-semibold text-foreground">{t("Trusted Farmers", "विश्वासू शेतकरी")}</p>
-            </div>
-          </div>
           {/* Floating badge - bottom left */}
           <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white/90 px-5 py-3 shadow-lg backdrop-blur-sm md:-bottom-6 md:-left-6">
             <div className="flex items-center gap-3">

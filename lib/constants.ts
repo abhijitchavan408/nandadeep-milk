@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
   name: "Nandadeep Milk Dairy",
-  nameMarathi: "नंददीप दूध डेअरी",
+  nameMarathi: "नंदादीप दूध डेअरी",
   tagline: "Farm Fresh Dairy Goodness, Delivered Daily",
   taglineMarathi: "शेतातून ताजे दुग्ध उत्पादने, दररोज डिलिव्हरी",
   description:
@@ -170,7 +170,7 @@ export const TESTIMONIALS = [
     quote:
       "We have been getting milk from Nandadeep Milk Dairy for 10 years now. The quality and freshness is unmatched.",
     quoteMr:
-      "आम्ही गेल्या १० वर्षांपासून नंददीप दूध डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे.",
+      "आम्ही गेल्या १० वर्षांपासून नंदादीप दूध डेअरीकडून दूध घेत आहोत. गुणवत्ता आणि ताजेपणा अतुलनीय आहे.",
     author: "Tata Power",   
     authorMr: "टाटा पॉवर",
     role: "Mumbai, India",
@@ -180,7 +180,7 @@ export const TESTIMONIALS = [
     quote:
       "We trust Nandadeep for our daily milk and dairy needs. The quality is consistently excellent and delivery is always on time. Highly reliable!",
     quoteMr:
-      "आम्ही आमच्या दैनंदिन दूध आणि दुग्ध गरजांसाठी नंददीपवर विश्वास ठेवतो. गुणवत्ता सातत्याने उत्कृष्ट आहे आणि डिलिव्हरी नेहमी वेळेवर असते. अत्यंत विश्वासार्ह!",
+      "आम्ही आमच्या दैनंदिन दूध आणि दुग्ध गरजांसाठी नंदादीपवर विश्वास ठेवतो. गुणवत्ता सातत्याने उत्कृष्ट आहे आणि डिलिव्हरी नेहमी वेळेवर असते. अत्यंत विश्वासार्ह!",
     author: "Kokilaben Hospital",
     authorMr: "कोकिलाबेन हॉस्पिटल",
     role: "Mumbai, India",
@@ -190,7 +190,7 @@ export const TESTIMONIALS = [
     quote:
       "Nandadeep Milk Dairy has been our trusted supplier for pure milk and curd. The freshness and hygiene standards are top-notch. Our patients benefit greatly.",
     quoteMr:
-      "नंददीप दूध डेअरी हे शुद्ध दूध आणि दही यांचे आमचे विश्वासू पुरवठादार आहेत. ताजेपणा आणि स्वच्छता मानके उत्कृष्ट आहेत. आमच्या रुग्णांना खूप फायदा होतो.",
+      "नंदादीप दूध डेअरी हे शुद्ध दूध आणि दही यांचे आमचे विश्वासू पुरवठादार आहेत. ताजेपणा आणि स्वच्छता मानके उत्कृष्ट आहेत. आमच्या रुग्णांना खूप फायदा होतो.",
     author: "Sommya Hospital",
     authorMr: "सोम्म्या हॉस्पिटल",
     role: "Mumbai, India",
@@ -200,7 +200,7 @@ export const TESTIMONIALS = [
     quote:
       "Our college canteen serves hundreds of students daily. Nandadeep ensures we get fresh milk and paneer every morning without fail. Great service!",
     quoteMr:
-      "आमच्या कॉलेज कॅन्टीनमध्ये दररोज शेकडो विद्यार्थ्यांना जेवण दिले जाते. नंददीप दररोज सकाळी ताजे दूध आणि पनीर विना अपयश पुरवतो. उत्तम सेवा!",
+      "आमच्या कॉलेज कॅन्टीनमध्ये दररोज शेकडो विद्यार्थ्यांना जेवण दिले जाते. नंदादीप दररोज सकाळी ताजे दूध आणि पनीर विना अपयश पुरवतो. उत्तम सेवा!",
     author: "Sommya College",
     authorMr: "सोम्म्या कॉलेज",
     role: "Mumbai, India",
